@@ -70,11 +70,13 @@ function appendDom(employee, i){
     $el.append("<p class='employeeNumber'>" + employee.employeeNumber + "</p>");
     $el.append("<p class='employeeTitle'>" + employee.employeeTitle + "</p>");
 
+    //get employee salary, parse , add commas using .toLocaleString
     var salaryOutput = parseInt(employee.employeeSalary).toLocaleString('en');
 
+    //salary to DOM
     $el.append("<p class='employeeSalary'>$" + salaryOutput + "</p>");
     
-    //delete button version
+    //append delete button
     $el.append("<button class='deleteRowButton btn btn-danger'>delete</button>");
 
 }
