@@ -1,0 +1,145 @@
+body{
+	background-color: #ccc;
+}
+
+input{
+	border-radius: 4px;
+	font-size: 16px;
+}
+label{
+	margin-right: 5px;
+	width: 140px;	
+}
+.input-group{
+	margin-top: 10px;
+	border-radius: 4px;
+}
+
+#submit{
+	margin-top: 10px;
+	border-radius: 4px;
+}
+#employeeContainer{
+	float: left;
+	margin-bottom: 30px;
+	margin-top: 0px;
+	margin-left: 25px;
+}
+
+#formContainer{
+	width: 215px;
+	float: left;
+}
+
+.employeeName{
+	float: left;
+	width: 170px;
+}
+.employeeNumber{
+	float: left;
+	width: 75px;
+}
+.employeeTitle{
+	float: left;
+	width: 140px;
+}
+.employeeSalary{
+	width: 100px;
+	float: left;
+}
+#employeeTitle{
+	    width: 215px;
+    border-radius: 4px;
+}
+#employeeName{
+	    width: 215px;
+    border-radius: 4px;
+}
+#employeeNumber{
+	    width: 215px;
+    border-radius: 4px;
+}
+
+
+#dollarSign {
+    font-size: 30px;
+}
+#monthlySalariesLabel {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#totalMonthlySalaries {
+    font-size: 30px;
+}
+
+button#submit {
+    margin-bottom: 20px;
+}
+
+.glyphicon-chevron-right:before {
+    margin-right: -7px;
+}
+.glyphicon-remove-sign{
+	color: red;
+}
+
+.counter {
+    width: 10px;
+    font-size: 14px;
+    float: left;
+    margin-right: 9px;
+    display: none;
+}
+.entryItem{
+	clear: both;
+}
+.employee{
+	clear: both;
+	border-bottom: 3px solid #337AB7;
+    padding-bottom: 10px;
+    margin-top:  20px;
+}
+
+.btn-danger{
+	margin-top: -8px;
+}
+
+#top-headers {
+    float: left;
+    width: 600px;
+    margin-top: 5px;
+    border-bottom: 3px solid #337AB7;
+    margin-left: 25px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.nameHeader {
+    float: left;
+    width: 165px;
+
+}
+.empNumHeader {
+    float: left;
+    width: 85px;
+
+}
+.titleHeader {
+    float: left;
+    width: 130px;
+
+}
+.salaryHeader {
+    float: left;
+    width: 100px;
+
+}
+
+section#main {
+    background-color: #fff;
+    margin-top: 20px;
+}
+#totalOuputArea{
+	padding-bottom: 25px;
+	clear: both;
+}

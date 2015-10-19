@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body >
+        <section id="main" class="container">
+            <h3>Employee Monthly Salary Report</h3>
+            <article id="formContainer">
+                <form id="employeeInfo">
+                    <input type="hidden" name="formCounter">
+                    <div class="input-group">
+                        <input class="form-control input" type="text" placeholder="Employee Name" maxlength="20" id="employeeName" name="employeeName" required/>
+                    </div> 
+                    <div class="input-group">
+                        <input class="form-control input" placeholder="Employee Number" type="text" maxlength="15" id="employeeNumber" name="employeeNumber" required/>
+                    </div> 
+                    <div class="input-group">
+                        <input class="form-control input" placeholder="Employee Title" type="text" maxlength="25" id="employeeTitle" name="employeeTitle" required/>
+                    </div>  
+                    <div class="input-group">
+                        <span class="input-group-addon">$</span>
+                        <input class="form-control" placeholder="Annual Salary" type="text" maxlength="12" id="employeeSalary" name="employeeSalary" required/>
+                    </div>
+
+                    <!-- <input  class="form-control " type="submit" value="add Employee >>"><br> -->  
+                    <button  type="submit" class="form-control btn btn-primary" id="submit" >
+                            <span>Add Employee &nbsp;&nbsp;</span>
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                    </button>
+                </form>
+                       <div id="totalOuputArea">
+                <span id="monthlySalariesLabel">Monthly Salaries Total:</span><br>
+                <span id="dollarSign">$</span><span id="totalMonthlySalaries"></span><span>&nbsp;/ Month</span>
+            </div>
+            </article>
+            <section>
+                <div id="top-headers">
+                    <p class="nameHeader">Name</p>
+                    <p class="empNumHeader">Emp #</p>
+                    <p class="titleHeader">Title</p>
+                    <p class="salaryHeader">Salary</p>
+                </div>
+                <div id="employeeContainer">
+                </div>
+            </section>
+      
+        </section>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+        <script src=" https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
