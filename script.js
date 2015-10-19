@@ -47,7 +47,7 @@ $(document).ready(function(){
             $(this).parent().remove();
             
             //figure out which item is being deleted
-            var itemToDelete = $(this).find('.counter').data('counter').text();
+            var itemToDelete = $(this).find('.counter').data('counter');
             
             //remove item from the array
             removeItem(itemToDelete,employeeArray);
