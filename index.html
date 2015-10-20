@@ -10,18 +10,21 @@
     </head>
     <body >
         <section id="main" class="container">
-            <h3>Employee Monthly Salary Report</h3>
-            <article id="formContainer">
+            <div class="page-header">
+                <h3 >Employee Monthly Salary Report</h3>
+            </div>
+            <section id="formContainer">
+
                 <form id="employeeInfo">
                     <input type="hidden" name="formCounter">
                     <div class="input-group">
                         <input class="form-control input" type="text" placeholder="Employee Name" maxlength="20" id="employeeName" name="employeeName" required/>
                     </div> 
                     <div class="input-group">
-                        <input class="form-control input" placeholder="Employee Number" type="text" maxlength="15" id="employeeNumber" name="employeeNumber" required/>
+                        <input class="form-control input" placeholder="Employee Number" type="text" maxlength="8" id="employeeNumber" name="employeeNumber" required/>
                     </div> 
                     <div class="input-group">
-                        <input class="form-control input" placeholder="Employee Title" type="text" maxlength="25" id="employeeTitle" name="employeeTitle" required/>
+                        <input class="form-control input" placeholder="Employee Title" type="text" maxlength="16" id="employeeTitle" name="employeeTitle" required/>
                     </div>  
                     <div class="input-group">
                         <span class="input-group-addon">$</span>
@@ -35,11 +38,15 @@
                             <span class="glyphicon glyphicon-chevron-right"></span>
                     </button>
                 </form>
-                       <div id="totalOuputArea">
-                <span id="monthlySalariesLabel">Monthly Salaries Total:</span><br>
-                <span id="dollarSign">$</span><span id="totalMonthlySalaries"></span><span>&nbsp;/ Month</span>
-            </div>
-            </article>
+                    <div id="totalOutputArea">
+                        <span id="monthlySalariesLabel">Monthly Salaries Total:</span><br>
+                        <p id="totalOutput" class="alert alert-success">
+                            <span id="dollarSign">$</span>
+                            <span id="totalMonthlySalaries"></span>
+                            <span class="perMonth">&nbsp;/ Month</span>
+                        </p>
+                    </div>
+            </section>
             <section>
                 <div id="top-headers">
                     <p class="nameHeader">Name</p>

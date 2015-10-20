@@ -2,7 +2,7 @@ var employeeArray = [];
 
 $(document).ready(function(){
     //hide output area on load
-    $('#totalOuputArea').hide();
+    $('#totalOutputArea').hide();
     $('#top-headers').hide();
 
     //initialize counter for each row to 0
@@ -29,22 +29,22 @@ $(document).ready(function(){
 
         //add items to the array
         employeeArray.push(values);
-        
-        //add items from line 22 to the DOM
-        appendDom(values, intCounter);
 
         var outputForPage = runTotal(employeeArray);
 
         $('#totalMonthlySalaries').text(outputForPage);
-        $('#totalOuputArea').fadeIn();
-        $('#top-headers').fadeIn();
+        $('#totalOutputArea').slideDown();
+        $('#top-headers').slideDown();
+
+        //add items from line 22 to the DOM
+        appendDom(values, intCounter);
 
     });
 
     //delete click event
     $('#employeeContainer').on('click', '.deleteRowButton', function(){
              //remove item from DOM   
-            $(this).parent().remove();
+            $(this).parent().slideUp().remove();
             
             //figure out which item is being deleted
             var itemToDelete = $(this).find('.counter').data('counter');
@@ -54,14 +54,14 @@ $(document).ready(function(){
 
             //put results of run toatal in var and display   
             var output = runTotal(employeeArray);
-            $('#totalMonthlySalaries').text(output);   
+            $('#totalMonthlySalaries').text(output).fadeIn();   
     });
 });
 
 
 function appendDom(employee, i){
     //add each row to the DOM when submitted
-    $("#employeeContainer").append("<div class='employee'></div>");
+    $("#employeeContainer").append("<div class='employee well'></div>");
 
     var $el = $("#employeeContainer").children().last();
     
@@ -77,7 +77,7 @@ function appendDom(employee, i){
     $el.append("<p class='employeeSalary'>$" + salaryOutput + "</p>");
     
     //append delete button
-    $el.append("<button class='deleteRowButton btn btn-danger'>delete</button>");
+    $el.append("<button class='deleteRowButton btn btn-danger'><span class='glyphicon glyphicon-remove-sign'></span>delete</button>");
 
 }
 

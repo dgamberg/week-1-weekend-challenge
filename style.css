@@ -33,7 +33,7 @@ label{
 
 .employeeName{
 	float: left;
-	width: 170px;
+	width: 200px;
 }
 .employeeNumber{
 	float: left;
@@ -41,7 +41,7 @@ label{
 }
 .employeeTitle{
 	float: left;
-	width: 140px;
+	width: 200px;
 }
 .employeeSalary{
 	width: 100px;
@@ -52,7 +52,7 @@ label{
     border-radius: 4px;
 }
 #employeeName{
-	    width: 215px;
+	 width: 215px;
     border-radius: 4px;
 }
 #employeeNumber{
@@ -80,8 +80,9 @@ button#submit {
 .glyphicon-chevron-right:before {
     margin-right: -7px;
 }
-.glyphicon-remove-sign{
-	color: red;
+.glyphicon-remove-sign {
+    color: white;
+    margin-right: 6px;
 }
 
 .counter {
@@ -96,7 +97,6 @@ button#submit {
 }
 .employee{
 	clear: both;
-	border-bottom: 3px solid #337AB7;
     padding-bottom: 10px;
     margin-top:  20px;
 }
@@ -107,7 +107,7 @@ button#submit {
 
 #top-headers {
     float: left;
-    width: 550px;
+    width: 678px;
     margin-top: 5px;
     border-bottom: 3px solid #337AB7;
     margin-left: 25px;
@@ -116,23 +116,28 @@ button#submit {
 }
 .nameHeader {
     float: left;
-    width: 165px;
+    width: 222px;
+    padding-left: 15px;
 
 }
 .empNumHeader {
     float: left;
-    width: 85px;
+    width: 80px;
 
 }
 .titleHeader {
     float: left;
-    width: 130px;
+    width: 193px;
 
 }
 .salaryHeader {
     float: left;
     width: 100px;
+    padding-left: 7px;
 
+}
+.perMonth{
+	font-size: 20px;
 }
 
 section#main {
@@ -142,4 +147,7 @@ section#main {
 #totalOuputArea{
 	padding-bottom: 25px;
 	clear: both;
+}
+p#totalOutput {
+    padding: 6px;
 }
